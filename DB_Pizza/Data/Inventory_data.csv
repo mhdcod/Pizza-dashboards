@@ -1,0 +1,21 @@
+item_name,ing_id,ing_name,ing_weight,ing_price,order_quantity,recipe_quantity,ordered_weight,unit_cost,ingredient_cost
+Margherita,4,Bell Peppers,1500,2.00,32,80,3200,0.01333,4.266666
+Margherita,2,Mozzarella Cheese,2000,3.00,32,200,11200,0.01500,16.800000
+Margherita,1,Tomato Sauce,5000,2.50,32,150,6400,0.00500,3.200000
+Pepperoni,7,Olive Oil,2500,3.00,59,50,5900,0.01200,7.080000
+Pepperoni,3,Pepperoni,1000,4.00,59,100,17700,0.04000,70.800000
+Pepperoni,2,Mozzarella Cheese,2000,3.00,59,100,11800,0.01500,17.700000
+Pepperoni,1,Tomato Sauce,5000,2.50,59,100,11800,0.00500,5.900000
+Vegetarian,14,Spinach,1000,2.00,21,80,6300,0.02000,12.600000
+Vegetarian,6,Mushrooms,1000,2.50,21,100,4200,0.02500,10.500000
+Vegetarian,4,Bell Peppers,1500,2.00,21,100,6300,0.01333,8.399998
+Vegetarian,2,Mozzarella Cheese,2000,3.00,21,100,6300,0.01500,9.450000
+Vegetarian,1,Tomato Sauce,5000,2.50,21,100,4200,0.00500,2.100000
+BBQ Chicken,7,Olive Oil,2500,3.00,70,50,7000,0.01200,8.400000
+BBQ Chicken,10,Chicken Breast,2000,5.00,70,100,21000,0.02500,52.500000
+BBQ Chicken,2,Mozzarella Cheese,2000,3.00,70,120,21000,0.01500,31.500000
+BBQ Chicken,8,BBQ Sauce,3000,3.50,70,100,14000,0.01167,16.333324
+Hawaiian,16,Ham,1000,3.00,64,80,19200,0.03000,57.600000
+Hawaiian,9,Pineapple,1500,2.00,64,50,19200,0.01333,25.599994
+Hawaiian,2,Mozzarella Cheese,2000,3.00,64,100,19200,0.01500,28.800000
+Hawaiian,1,Tomato Sauce,5000,2.50,64,100,12800,0.00500,6.400000

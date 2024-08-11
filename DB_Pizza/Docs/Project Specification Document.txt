@@ -1,0 +1,142 @@
+Project Specification Document for a Pizzeria Data Analysis
+1. Project Overview
+The pizzeria owner aims to analyze business, inventory, and staff data to improve management and decision-making. To this end, they have provided specific data and request the creation of three dashboards that will allow them to visualize and utilize this information effectively.
+2. Objectives
+The primary objective is to design and develop three interactive dashboards that will provide clear and actionable insights into orders, inventory, and staff.
+3. Dashboard Descriptions
+3.1. Dashboard 1: Orders
+This dashboard will provide an overview of the pizzeria’s sales performance.
+Total Orders: The total number of orders placed over a defined period.
+Total Sales: The total revenue generated from the orders.
+Total Items: The total number of items (pizzas, drinks, etc.) sold.
+Average Order Value: The average value of an order.
+Sales by Category: Breakdown of sales by product category (pizzas, drinks, desserts, etc.).
+Top Selling Items: Ranking of the best-selling items.
+Orders by Hour: Distribution of orders by the hour of the day.
+Sales by Hour: Distribution of sales by the hour of the day.
+Orders by Delivery/Pick Up: Comparison between delivered orders and those picked up on-site.
+
+3.2. Dashboard 2: Inventory
+This dashboard will allow tracking of stock levels and costs associated with ingredients.
+Total Quantity by Ingredient: Total remaining quantity for each ingredient.
+Total Cost of Ingredients: Total cost of the ingredients in stock.
+Calculated Cost of Pizza: Calculated cost of making each type of pizza, based on the ingredients used.
+Percentage Stock Remaining by Ingredient: Percentage of remaining stock for each ingredient.
+List of Ingredients to Reorder: List of ingredients to reorder based on the remaining stock. Highlight critical needed ones
+
+3.3. Dashboard 3: Staff
+This dashboard will provide insights into staff-related metrics, allowing tracking of costs and work hours.
+Total Staff Cost: Total cost of staff over a given period.
+Total Hours Worked: Total number of hours worked by all staff.
+Hours Worked by Staff Member: Breakdown of hours worked by each staff member.
+Cost per Staff Member: Cost per staff member, calculated based on hours worked.
+
+4. Provided Data
+The client has provided the following datasets from their pizzeria’s database:
+4.1. Customers Data
+Table: customers
+Fields:
+cust_id: Unique identifier for each customer.
+first_name: The first name of the customer.
+last_name: The last name of the customer.
+
+4.2. Address Data
+Table: address
+Fields:
+address_id: Unique identifier for each address.
+delivery_address1: The primary delivery address line.
+delivery_address2: The secondary delivery address line (optional).
+delivery_city: The city for the delivery address.
+delivery_zipcode: The postal code for the delivery address.
+
+43. Items Data
+Table: items
+Fields:
+item_id: Unique identifier for each item.
+sku: Stock Keeping Unit, a unique identifier for inventory tracking.
+item_name: The name of the item (e.g., Margherita Pizza).
+item_cat: The category of the item (e.g., Pizza, Drink).
+item_size: The size of the item (e.g., Small, Medium, Large).
+item_price: The price of the item.
+
+4.4. Ingredients Data
+Table: ingredients
+Fields:
+ing_id: Unique identifier for each ingredient.
+ing_name: The name of the ingredient (e.g., Mozzarella Cheese).
+ing_weight: The weight or quantity of the ingredient.
+ing_price: The cost of the ingredient.
+ing_meas: The measurement unit for the ingredient (e.g., grams, liters).
+
+4.5. Orders Data
+Table: orders
+Fields:
+order_id: Unique identifier for each order.
+cust_id: The customer who placed the order (foreign key from customers).
+address_id: The delivery address associated with the order (foreign key from address).
+item_id: The item ordered (foreign key from items).
+created_at: The date and time the order was created.
+
+4.6. Recipe Data
+Table: recipe
+Fields:
+row_id: Unique row identifier for each recipe entry.
+recipe_id: The SKU of the item (foreign key from items).
+ing_id: The ingredient used in the recipe (foreign key from ingredients).
+quantity: The quantity of the ingredient used in the recipe.
+
+4.7. Inventory Data
+Table: inventory
+Fields:
+inv_id: Unique identifier for each inventory entry.
+item_id: The item in the inventory (foreign key from items).
+quantity: The quantity of the item currently in stock.
+
+4.8. Staff Data
+Table: staff
+Fields:
+staff_id: Unique identifier for each staff member.
+first_name: The first name of the staff member.
+last_name: The last name of the staff member.
+position: The role or position of the staff member (e.g., Chef, Delivery Driver).
+hourly_rate: The hourly wage of the staff member.
+
+4.9. Shift Data
+Table: shift
+Fields:
+shift_id: Unique identifier for each shift.
+day_of_week: The day of the week for the shift.
+start_time: The start time of the shift.
+end_time: The end time of the shift.
+
+4.10. Rota Data
+Table: rota
+Fields:
+row_id: Unique row identifier for each rota entry.
+rota_id: Identifier for the rota.
+date: The date of the rota entry.
+shift_id: The shift associated with the rota (foreign key from shift).
+staff_id: The staff member assigned to the shift (foreign key from staff).
+
+5. Deliverables
+Three Interactive Dashboards: The three dashboards described above, including necessary filters to allow detailed data exploration.
+Technical Support: Assistance with the installation and configuration of the dashboards in the client's chosen environment.
+
+6. Technical Constraints
+Tools: The choice of data visualization tools will be made in consultation with the client (e.g., Tableau, Power BI, Google Data Studio, etc.).
+Data Integration: The data must be cleaned and prepared for integration into the dashboards.
+Data Updates: The dashboards must allow for regular data updates.
+
+7. Timeline
+Design Phase: 2 weeks.
+Development Phase: 3 weeks.
+Testing and Revision Phase: 1 week.
+Final Delivery: 6 weeks from the start of the project.
+Took me a 5 days ^^
+
+8. Budget
+The budget will be determined based on the estimated time required for the design, development, and delivery of the dashboards, as well as for post-delivery technical support.
+9. Success Criteria
+The dashboards must be intuitive and easy to use.
+The data must be presented clearly and accessibly to facilitate decision-making.
+Data updates should occur without significant service interruption.
